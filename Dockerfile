@@ -13,9 +13,9 @@ RUN apk add git
 
 RUN go env -w GO111MODULE=on
 
-RUN git config --global url."https://japangermany1998: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@github.com:techmaster-vietnam/private_gomod".insteadOf "https://github.com/techmaster-vietnam/private_gomod"
-
 RUN go env -w GOPRIVATE=github.com/techmaster-vietnam
+
+RUN git config --global url."https://japangermany1998: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@github.com/techmaster-vietnam/private_gomod.git".insteadOf "https://github.com/techmaster-vietnam/private_gomod.git"
 
 # Build the Go app
 RUN go build -o HelloGo .
