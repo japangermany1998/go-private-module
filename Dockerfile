@@ -1,27 +1,30 @@
 # Start from the latest golang base image
-FROM golang:1.16-alpine
+FROM golang:latest AS build
 
-RUN GOCACHE=off
-
-# Set the Current Working Directory inside the container
 WORKDIR /app
 
-# Copy everything from the current directory to the Working Directory inside the container
+ARG GITHUB_USER=$GITHUB_USER
+ARG GITHUB_PASS=$GITHUB_PASS
+
+COPY go.mod .
+COPY go.sum .
+
+RUN echo "machine github.com login $GITHUB_USER password $GITHUB_PASS" > ~/.netrc
+
+RUN go mod download
+
 COPY . .
 
-RUN apk add git
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -o HelloGo .
 
-RUN go env -w GOPRIVATE=github.com/techmaster-vietnam
+FROM alpine:latest
 
-RUN git config --add --global url."https://<user>:<personal_access_token>@github.com".insteadOf "https://github.com"
+WORKDIR /app
 
-# Build the Go app
-RUN go build -o HelloGo .
-# Expose port 8080 to the outside world
+COPY . .
+COPY --from=build /app/HelloGo . 
+
 EXPOSE 8080
 
-#ENTRYPOINT ["/app"]
-
-# Command to run the executable
 ENTRYPOINT ["./HelloGo"]
 

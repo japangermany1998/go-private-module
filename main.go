@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	var post = getmodel.GetPost()
+	var post = private_gomod.GetPost()
 	fmt.Println(post)
 	app := iris.New()
 	app.Get("/",func(ctx iris.Context){
