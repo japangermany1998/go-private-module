@@ -182,8 +182,8 @@ github.com/tdewolff/parse/v2 v2.5.19 h1:Kjaj3KQOx/4elIxlBSglus4E2oMfdROphvbq2b+O
 github.com/tdewolff/parse/v2 v2.5.19/go.mod h1:WzaJpRSbwq++EIQHYIRTpbYKNA3gn9it1Ik++q4zyho=
 github.com/tdewolff/test v1.0.6 h1:76mzYJQ83Op284kMT+63iCNCI7NEERsIN8dLM+RiKr4=
 github.com/tdewolff/test v1.0.6/go.mod h1:6DAvZliBAAnD7rhVgwaM7DE5/d9NMOAJ09SqYqeK4QE=
-github.com/techmaster-vietnam/private_gomod v1.0.4 h1:ii18LEIeHrIitSH156LF9ls6sIjP5X5EsmmivCAPePQ=
-github.com/techmaster-vietnam/private_gomod v1.0.4/go.mod h1:zwSWo5L//+SeHBsjMf8Jp+ah9PaSrDJj4Sh00Z4KePY=
+github.com/techmaster-vietnam/private_gomod v0.0.0 h1:Z40IhspTngn6jhTH0vL3v/uEd64pCL57poiIYD59iBY=
+github.com/techmaster-vietnam/private_gomod v0.0.0/go.mod h1:zwSWo5L//+SeHBsjMf8Jp+ah9PaSrDJj4Sh00Z4KePY=
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
