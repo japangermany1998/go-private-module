@@ -4,12 +4,12 @@ FROM golang:latest AS build
 WORKDIR /app
 
 ARG GITHUB_USER=$GITHUB_USER
-ARG GITHUB_PASS=$GITHUB_PASS
+ARG GITHUB_TOKEN=$GITHUB_TOKEN
 
 COPY go.mod .
 COPY go.sum .
 
-RUN echo "machine github.com login $GITHUB_USER password $GITHUB_PASS" > ~/.netrc
+RUN echo "machine github.com login $GITHUB_USER password $GITHUB_TOKEN" > ~/.netrc
 
 RUN go mod download
 
