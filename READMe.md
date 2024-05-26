@@ -48,7 +48,7 @@ go 1.16
 
 Khi tạo xong giờ ta cần release phiên bản cho nó. Để làm vậy tại github repository ta chọn Create a New Realease. Sẽ ra màn hình sau đây:
 
-![w](https://techmaster.vn/media/static/bm0tmgk51co4vclgfvu0/c4d386k51co7598b7jfg)
+![](https://media.techmaster.vn/api/static/bm0tmgk51co4vclgfvu0/c4d386k51co7598b7jfg)
 
 Ở đây mình nhập tag version v0.0.0 và title là "release lần đầu". Sau đấy publish release.
 
