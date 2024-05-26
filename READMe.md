@@ -1,3 +1,4 @@
+# Các bước khởi tạo và đóng gói một project chạy với private module  
 ## 1. Tự tạo một go module như khi làm go module public
 
 Việc đầu tiên tạo một go module và đẩy lên github repo private.
